@@ -28,7 +28,8 @@ body {
 	margin-bottom: 3rem;
 }
 
-nav {
+nav,
+.mobile-nav-menu {
 	display: flex;
 	justify-content: space-between;
 	background-color: cadetblue;
@@ -65,9 +66,15 @@ nav {
 	align-items: center;
 }
 
+li.mobile-menu {
+	display: none;
+}
+
 .nav-menu ul li {
 	padding: 1rem 2rem 1rem 0;
 }
+
+
 
 
 .title {
@@ -223,11 +230,13 @@ footer .container {
 		display: none;
 	}	
 
-	.nav-menu {
+	li.desktop-menu {
 		display: none;
 	}
 
-
+	li.mobile-menu {
+		display: inline-block;
+	}
 
 	.services{
 		flex-direction: column;
@@ -256,12 +265,15 @@ footer .container {
 		text-align: center;
 		margin: 0;
 		padding: 0;
-
 	}
 
+	.information-box {
+		margin-bottom: 4rem;
+	}
 
-
-
+	.information-title {
+		margin-bottom: 1rem;
+	}
 
 	footer p {
 		display: none;
